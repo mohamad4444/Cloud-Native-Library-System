@@ -56,6 +56,24 @@ https://12factor.net/ <br/>
 https://www.baeldung.com/spring-boot-12-factor <br/>
 https://medium.com/@tech_18484/introduction-701b7a8f4730 <br/>
 
+# Mail Service choice
+dedicated mail service to generate random emails for testing and development.
+
+Choice between:
+- Mailu
+  API Token : "1SS7E7LGQDIEGI2R3Y2MJ5VK2KRNCR0Z"
+- Docker-Mailserver
+- Modoboa
+- Poste.io
+- MailHog
+
+# Mailu
+https://setup.mailu.io/2024.06/
+
+docker compose -p mailu up -d
+docker compose -p mailu exec admin flask mailu admin admin mailu.io admin
+
+
 # Intended Folder Structure
 ```
 project-root/
